@@ -1,0 +1,9 @@
+{
+    "ubicacion": {
+        "ciudad": "Mérida",
+        "clima": {
+            "tipo": "templado",
+            "imagen": "images/nublado.jpg"
+        }
+    }
+}

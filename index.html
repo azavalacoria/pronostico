@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Pronostico del Clima</title>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js" ></script>
+		<script>
+			$(document).ready(function(){
+				$.getJSON("data.json", function(data){
+					$('#ubicacion').html(data.ubicacion.ciudad);
+					changeBackground('url(' + data.ubicacion.clima.imagen +')');
+				});
+			});
+			function changeBackground(color)
+			{
+				document.body.style.background = color;
+			}
+		</script>
+	</head>
+	<body>
+		<div style="background-color: lightgrey; padding: 10px; text-align: center;">
+			<div id="ubicacion">Default</div>
+		</div>
+		<br>
+		<br>
+		<form onchange="changeBackground('url(' + place.value + ')')">
+			<select id="place" >
+				<option value="">Ninguna</option>
+				<option value="images/soleado.jpg">Soleado</option>
+				<option value="images/lluvioso.jpg">Lluvioso</option>
+				<option value="images/nublado.jpg">Nublado</option>
+			</select>
+			<br>
+		</form>
+	</body>
+</html>
