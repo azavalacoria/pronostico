@@ -8,5 +8,6 @@
         { "y": "Ayer", "a": 75,  "b": 65, "c": 640 },
         { "y": "Hoy", "a": 100, "b": 90, "c": 740 }
         ],
-    "variables": ["a", "b", "c"]
+    "variables": ["a", "b", "c"],
+    "etiquetas": ["Variable Uno", "Variable Dos", "Variable Tres"]
 }
