@@ -1,13 +1,13 @@
 {
-    "dias": [
-        { "y": "vie", "a": 10, "b": 90, "c": 80 },
-        { "y": "Sab", "a": 75, "b": 65, "c": 30 },
-        { "y": "Dom", "a": 50, "b": 40, "c": 20 },
-        { "y": "Lun", "a": 75, "b": 65, "c": 20 },
-        { "y": "Mar", "a": 50, "b": 40, "c": 57 },
-        { "y": "Mie", "a": 75, "b": 65, "c": 64 },
-        { "y": "Jue", "a": 40, "b": 90, "c": 88 }
+    'dias': [
+        { 'y': 'vie', 'a': 10, 'b': 90, 'c': 80 },
+        { 'y': 'Sab', 'a': 75, 'b': 65, 'c': 30 },
+        { 'y': 'Dom', 'a': 50, 'b': 40, 'c': 20 },
+        { 'y': 'Lun', 'a': 75, 'b': 65, 'c': 20 },
+        { 'y': 'Mar', 'a': 50, 'b': 40, 'c': 57 },
+        { 'y': 'Mie', 'a': 75, 'b': 65, 'c': 64 },
+        { 'y': 'Jue', 'a': 40, 'b': 90, 'c': 88 }
         ],
-    "variables": ["a", "b", "c"],
-    "etiquetas": ["Variable Uno", "Variable Dos", "Variable Tres"]
+    'variables': ['a', 'b', 'c'],
+    'etiquetas': ['Variable Uno', 'Variable Dos', 'Variable Tres']
 }
