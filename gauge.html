@@ -1,0 +1,36 @@
+<head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript">
+
+    google.load('visualization', '1', {packages:['gauge']});
+
+    google.setOnLoadCallback(drawChart);
+
+
+    function drawChart() {
+    var jsonData = {
+                    cols: [{id: 'Host Name', label: 'Host Name', type: 'string'},
+                           {id: 'Value', label: 'Value', type: 'number'}],
+                    rows: [{c:[{v: 'bongo'}, {v: 24}]},
+                           {c:[{v: 'chappie'}, {v: 78}]}]
+                    }
+
+    var data = new google.visualization.DataTable(jsonData);
+
+    var options = {
+        width: 400, height: 120,
+        redFrom: 90, redTo: 100,
+        yellowFrom:75, yellowTo: 90,
+        minorTicks: 5
+    };
+
+    var chart = new google.visualization.Gauge(document.getElementById('chart_div'));
+        chart.draw(data, options);
+    }
+
+</script>
+</head>
+<body>
+    <div id='chart_div'></div>
+</body>

@@ -1,0 +1,58 @@
+{
+    "datos": {
+        "cols": [
+                    {
+                        "id": "Title",
+                        "label": "Title",
+                        "type": "string"
+                    },
+                    {
+                        "id": "Value",
+                        "label": "Value",
+                        "type": "number"
+                    }
+                ],
+        "rows": [
+                    {
+                        "c": [
+                                {
+                                    "v": "Variable 1"
+                                },
+                                {
+                                    "v": 24
+                                }
+                            ]
+                    },
+                    {
+                        "c": [
+                                {
+                                    "v": "Variable 2"
+                                },
+                                {
+                                    "v": 78
+                                }
+                            ]
+                    },
+                    {
+                        "c": [
+                                {
+                                    "v": "Variable 3"
+                                },
+                                {
+                                    "v": 83
+                                }
+                            ]
+                    },
+                    {
+                        "c": [
+                                {
+                                    "v": "Variable 4"
+                                },
+                                {
+                                    "v": 8
+                                }
+                            ]
+                    }
+                ]
+    }
+}
